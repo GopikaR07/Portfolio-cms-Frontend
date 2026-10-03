@@ -54,7 +54,7 @@ function ContactSection() {
       className="portfolio-section contact-section"
     >
       <p className="section-label">
-        06 — CONTACT
+        08 — CONTACT
       </p>
 
       <div className="contact-heading">

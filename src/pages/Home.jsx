@@ -8,6 +8,9 @@ import ProjectsSection from "../components/ProjectsSection";
 import ExperienceSection from "../components/ExperienceSection";
 import BlogSection from "../components/BlogSection";
 import ContactSection from "../components/ContactSection";
+import TestimonialsSection from "../components/TestimonialsSection";
+import ServicesSection from "../components/ServicesSection";
+
 
 function Home() {
   const [about, setAbout] = useState(null);
@@ -143,6 +146,11 @@ function Home() {
         <ExperienceSection />
 
         <BlogSection />
+
+        <TestimonialsSection />
+
+        <ServicesSection />
+
 
         <ContactSection />
       </main>

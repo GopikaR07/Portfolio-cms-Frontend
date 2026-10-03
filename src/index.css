@@ -1202,3 +1202,76 @@ textarea {
     gap: 0;
   }
 }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  padding: 25px;
+  border: 1px solid #27272a;
+  border-radius: 14px;
+  background: #111114;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.testimonial-message {
+  color: #d4d4d8;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.testimonial-card h3 {
+  margin: 20px 0 5px;
+}
+
+.testimonial-person {
+  color: #71717a;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  );
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.public-service-card {
+  padding: 25px;
+  border: 1px solid #27272a;
+  border-radius: 14px;
+  background: #111114;
+}
+
+.public-service-card h3 {
+  margin: 15px 0 10px;
+  font-size: 23px;
+}
+
+.public-service-card p {
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.service-icon {
+  color: #d4d4d8;
+  font-size: 14px;
+  font-weight: 600;
+}
