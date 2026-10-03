@@ -6,7 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import AdminLayout from "./layouts/AdminLayout";
 import About from "./pages/admin/About";
 import Skills from "./pages/admin/Skills";
-
+import Projects from "./pages/admin/Projects";
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Route index element={<AdminDashboard />} />
           <Route path="about" element={<About />} />
           <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
     </BrowserRouter>

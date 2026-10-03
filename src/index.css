@@ -262,3 +262,50 @@ textarea {
 .delete-button {
   background: #dc2626 !important;
 }
+
+.projects-list-card {
+  margin-top: 25px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.project-admin-card {
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.project-admin-image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
+.project-admin-info {
+  flex: 1;
+}
+
+.project-admin-info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.project-admin-info p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.project-admin-info small {
+  display: block;
+  margin-bottom: 12px;
+  color: #4b5563;
+}
