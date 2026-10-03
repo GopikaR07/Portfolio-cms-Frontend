@@ -10,7 +10,8 @@ import Projects from "./pages/admin/Projects";
 import Blogs from "./pages/admin/Blogs";
 import Experience from "./pages/admin/Experience";
 import Testimonials from "./pages/admin/Testimonials";
-
+import Services from "./pages/admin/Services";
+import Media from "./pages/admin/Media";
 
 
 
@@ -37,6 +38,8 @@ function App() {
           <Route path="experience" element={<Experience />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route path="services" element={<Services />} />
+          <Route path="media" element={<Media />} />
         </Route>
       </Routes>
     </BrowserRouter>
