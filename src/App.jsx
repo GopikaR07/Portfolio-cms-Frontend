@@ -14,12 +14,15 @@ import Services from "./pages/admin/Services";
 import Media from "./pages/admin/Media";
 import Messages from "./pages/admin/Messages";
 
+import Home from "./pages/Home";
+
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<div>Portfolio Home</div>} />
+        <Route path="/" element={<Home />} />
 
         <Route path="/admin/login" element={<Login />} />
 
