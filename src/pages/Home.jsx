@@ -11,6 +11,10 @@ import ContactSection from "../components/ContactSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ServicesSection from "../components/ServicesSection";
 
+import Footer from "../components/Footer";
+
+
+
 
 function Home() {
   const [about, setAbout] = useState(null);
@@ -154,6 +158,7 @@ function Home() {
 
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }
