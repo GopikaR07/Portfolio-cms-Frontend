@@ -7,6 +7,9 @@ import AdminLayout from "./layouts/AdminLayout";
 import About from "./pages/admin/About";
 import Skills from "./pages/admin/Skills";
 import Projects from "./pages/admin/Projects";
+import Blogs from "./pages/admin/Blogs";
+import Experience from "./pages/admin/Experience";
+
 
 
 function App() {
@@ -29,6 +32,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="skills" element={<Skills />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
     </BrowserRouter>
