@@ -1347,3 +1347,74 @@ textarea {
     flex-direction: column;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.portfolio-section {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(52px, 16vw, 80px);
+  }
+
+  .hero-content h2 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .primary-button,
+  .secondary-button {
+    text-align: center;
+  }
+
+  .hero-socials {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .portfolio-section h2 {
+    line-height: 1.1;
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .blog-grid,
+  .testimonials-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image,
+  .blog-image {
+    height: 200px;
+  }
+}
