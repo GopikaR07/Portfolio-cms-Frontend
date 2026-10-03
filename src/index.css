@@ -556,3 +556,74 @@ textarea {
   color: #6b7280;
   margin-top: 4px;
 }
+
+.messages-list-card {
+  margin-top: 25px;
+}
+
+.messages-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.messages-header h3 {
+  margin: 0;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.message-admin-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.message-admin-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.message-admin-header h3 {
+  margin: 0 0 5px;
+}
+
+.message-admin-header a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.message-admin-header small {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.message-subject {
+  margin-top: 15px;
+  color: #374151;
+}
+
+.message-content {
+  margin-top: 12px;
+}
+
+.message-content p {
+  color: #4b5563;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.empty-messages {
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+}

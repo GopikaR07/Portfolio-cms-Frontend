@@ -12,7 +12,7 @@ import Experience from "./pages/admin/Experience";
 import Testimonials from "./pages/admin/Testimonials";
 import Services from "./pages/admin/Services";
 import Media from "./pages/admin/Media";
-
+import Messages from "./pages/admin/Messages";
 
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="services" element={<Services />} />
           <Route path="media" element={<Media />} />
+          <Route path="messages" element={<Messages />} />
         </Route>
       </Routes>
     </BrowserRouter>
