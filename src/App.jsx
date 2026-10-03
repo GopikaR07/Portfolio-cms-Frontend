@@ -9,6 +9,8 @@ import Skills from "./pages/admin/Skills";
 import Projects from "./pages/admin/Projects";
 import Blogs from "./pages/admin/Blogs";
 import Experience from "./pages/admin/Experience";
+import Testimonials from "./pages/admin/Testimonials";
+
 
 
 
@@ -34,6 +36,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="experience" element={<Experience />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="testimonials" element={<Testimonials />} />
         </Route>
       </Routes>
     </BrowserRouter>
