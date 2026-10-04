@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Mail } from "lucide-react";
 
+import useScrollFX from "../hooks/useScrollFX";
 import Navbar from "../components/Navbar";
 import api from "../lib/api/api";
 import SkillsSection from "../components/SkillsSection";
@@ -16,7 +17,25 @@ import Footer from "../components/Footer";
 
 
 
+function Typewriter({ words }) {
+  const [i, setI] = useState(0);
+  const [n, setN] = useState(0);
+  const [del, setDel] = useState(false);
+  useEffect(() => {
+    const w = words[i];
+    const t = setTimeout(() => {
+      if (!del && n < w.length) setN(n + 1);
+      else if (!del) setDel(true);
+      else if (n > 0) setN(n - 1);
+      else { setDel(false); setI((i + 1) % words.length); }
+    }, !del && n === w.length ? 1400 : del ? 35 : 75);
+    return () => clearTimeout(t);
+  }, [n, del, i, words]);
+  return <>{words[i].slice(0, n)}<span className="type-cursor" /></>;
+}
+
 function Home() {
+  useScrollFX();
   const [about, setAbout] = useState(null);
   const [aboutLoading, setAboutLoading] = useState(true);
 
@@ -48,9 +67,7 @@ function Home() {
 
             <h1>Gopika R.</h1>
 
-            <h2>
-              Computer Science Engineer & ML Enthusiast
-            </h2>
+            <h2><Typewriter words={["Computer Science Engineer", "ML Enthusiast", "Computer Vision Explorer", "Problem Solver"]} /></h2>
 
             <p className="hero-description">
               I build intelligent software solutions,
@@ -100,11 +117,8 @@ function Home() {
 
           <div className="hero-visual">
             <div className="hero-circle">
-              <img
-  src="/profile-placeholder.jpg"
-  alt="Gopika R."
-  className="hero-profile-image"
-/>
+              <span className="hero-initials">GR</span>
+              <img src="/profile.jpg" alt="Gopika R." className="hero-profile-image" onError={(e) => { e.currentTarget.style.display = "none"; }} />
             </div>
           </div>
 
