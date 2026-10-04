@@ -1,13 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="portfolio-footer">
       <div className="footer-content">
         <div>
           <h3>Gopika R.</h3>
-          <p>
-            Building intelligent solutions with
-            curiosity and code.
-          </p>
+          <p>Building intelligent solutions with curiosity and code.</p>
         </div>
 
         <div className="footer-links">
@@ -19,14 +18,9 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>
-          © {new Date().getFullYear()} Gopika R.
-          All rights reserved.
-        </p>
+        <p>© {new Date().getFullYear()} Gopika R. All rights reserved.</p>
 
-        <a href="/admin/login">
-          Admin
-        </a>
+        <Link to="/admin/login">Admin</Link>
       </div>
     </footer>
   );

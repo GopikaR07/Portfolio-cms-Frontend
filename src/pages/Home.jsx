@@ -76,26 +76,35 @@ function Home() {
             </div>
 
             <div className="hero-socials">
-              <a href="#" aria-label="GitHub">
-                <span>GH</span>
-              </a>
+  <a
+    href="https://github.com/GopikaR07"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub
+  </a>
 
-              <a href="#" aria-label="LinkedIn">
-                <span>in</span>
-              </a>
+  <a
+    href="https://www.linkedin.com/in/gopika-r-3a6758325"
+    target="_blank"
+    rel="noreferrer"
+  >
+    in
+  </a>
 
-              <a
-                href="#contact"
-                aria-label="Email"
-              >
-                <Mail size={22} />
-              </a>
-            </div>
+  <a href="mailto:gopikasg07@gmail.com">
+    <Mail size={18} />
+  </a>
+</div>
           </div>
 
           <div className="hero-visual">
             <div className="hero-circle">
-              <span>AI</span>
+              <img
+  src="/profile-placeholder.jpg"
+  alt="Gopika R."
+  className="hero-profile-image"
+/>
             </div>
           </div>
 
